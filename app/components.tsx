@@ -9,10 +9,10 @@ export function ContactButtons({ dark = false }: { dark?: boolean }) {
   return (
     <div className="flex flex-col gap-3 sm:flex-row">
       <a className="button bg-accent text-forest hover:bg-accent-light" href={whatsappHref} target="_blank" rel="noreferrer">
-        Per WhatsApp anfragen <span aria-hidden="true">↗</span>
+        Per WhatsApp anfragen
       </a>
       <a className={`button border ${phoneClass}`} href={siteConfig.phoneHref}>
-        Jetzt anrufen <span aria-hidden="true">↗</span>
+        Jetzt anrufen
       </a>
     </div>
   );
