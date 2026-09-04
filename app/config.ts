@@ -2,8 +2,8 @@
 export const siteConfig = {
   name: "E-Bike Verleih Schwäbisch Hall",
   url: "https://ebike-verleih-sha.com",
-  phoneDisplay: "01512 2614655",
-  phoneHref: "tel:+4915122614655",
+  phoneDisplay: "01624 298268",
+  phoneHref: "tel:+491624298268",
   whatsappHref: "https://wa.me/message/NNP7FAVGDIFTE1",
   email: "info@ebox-bike.de",
   address: {
