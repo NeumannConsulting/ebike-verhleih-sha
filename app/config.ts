@@ -2,10 +2,9 @@
 export const siteConfig = {
   name: "E-Bike Verleih Schwäbisch Hall",
   url: "https://ebike-verleih-sha.com",
-  phoneDisplay: "0791 95410119",
-  phoneHref: "tel:+4979195410119",
-  whatsappNumber: "4979195410119",
-  whatsappMessage: "Hallo, ich möchte ein E-Bike in Schwäbisch Hall anfragen.",
+  phoneDisplay: "01512 2614655",
+  phoneHref: "tel:+4915122614655",
+  whatsappHref: "https://wa.me/message/NNP7FAVGDIFTE1",
   email: "info@ebox-bike.de",
   address: {
     street: "Aschenhausweg 19",
@@ -13,5 +12,3 @@ export const siteConfig = {
     city: "Schwäbisch Hall",
   },
 } as const;
-
-export const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteConfig, whatsappHref } from "./config";
+import { siteConfig } from "./config";
 
 export function ContactButtons({ dark = false }: { dark?: boolean }) {
   const phoneClass = dark
@@ -8,7 +8,7 @@ export function ContactButtons({ dark = false }: { dark?: boolean }) {
 
   return (
     <div className="flex flex-col gap-3 sm:flex-row">
-      <a className="button bg-accent text-forest hover:bg-accent-light" href={whatsappHref} target="_blank" rel="noreferrer">
+      <a className="button bg-accent text-forest hover:bg-accent-light" href={siteConfig.whatsappHref} target="_blank" rel="noreferrer">
         Per WhatsApp anfragen
       </a>
       <a className={`button border ${phoneClass}`} href={siteConfig.phoneHref}>
