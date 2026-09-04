@@ -1,7 +1,7 @@
 /** Change contact details here; every call-to-action uses these values. */
 export const siteConfig = {
   name: "E-Bike Verleih Schwäbisch Hall",
-  url: "https://ebike-verleih-sha.de",
+  url: "https://ebike-verleih-sha.com",
   phoneDisplay: "0791 95410119",
   phoneHref: "tel:+4979195410119",
   whatsappNumber: "4979195410119",
