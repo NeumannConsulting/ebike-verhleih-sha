@@ -58,7 +58,7 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-media" aria-hidden="true">
-            <Image src="/images/hero-v2.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[68%_center] sm:object-center" />
+            <Image src="/images/hero-v2.jpg" alt="" fill priority sizes="100vw" className="hero-photo object-cover" />
           </div>
           <div className="shell hero-content-wrap">
             <header className="flex items-center justify-between gap-4 py-5 text-white">
@@ -69,19 +69,19 @@ export default function Home() {
               <p className="eyebrow !text-accent">Schwäbisch Hall &amp; Umgebung</p>
               <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-6xl">E-Bike mieten &amp; Schwäbisch Hall entdecken.</h1>
               <p className="mt-6 max-w-xl text-lg leading-8 text-white/80">Das passende E-Bike für Ihre nächste Tour. Einfach Ihren Wunschtermin anfragen und Verfügbarkeit klären.</p>
-              <div className="mt-6 border-l-2 border-accent pl-4">
-                <p className="font-semibold text-white">E-Bikes ab 50 € pro Tag.</p>
-                <p className="mt-1 max-w-lg text-sm leading-6 text-white/70">Bei mehrtägiger oder wochenweiser Miete sind individuelle Rabatte möglich.</p>
-              </div>
               <div className="mt-8"><ContactButtons dark /></div>
+              <div className="mt-5 max-w-lg text-sm leading-6 text-white/60">
+                <p>E-Bikes ab 50 € pro Tag.</p>
+                <p className="mt-1">Bei mehrtägiger oder wochenweiser Miete sind individuelle Rabatte möglich.</p>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="py-16 sm:py-24">
           <div className="shell">
-            <p className="eyebrow">Unsere Auswahl</p>
-            <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">Was passt zu Ihrer nächsten Fahrt?</h2>
+            <p className="eyebrow text-center">Unsere Auswahl</p>
+            <h2 className="mx-auto mt-3 max-w-2xl text-center text-3xl font-semibold tracking-tight sm:text-4xl">Was passt zu Ihrer nächsten Fahrt?</h2>
             <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
               {bikes.map((bike) => (
                 <article key={bike.name} className="flex h-full flex-col overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-black/5">
@@ -93,8 +93,8 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <p className="mt-6 max-w-3xl text-sm leading-6 text-forest/70">Die Bilder zeigen Beispielmodelle und Kategorien. Tatsächliche Verfügbarkeit klären wir persönlich per WhatsApp oder Telefon.</p>
-            <div className="mt-7"><ContactButtons /></div>
+            <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-forest/70">Die Bilder zeigen Beispielmodelle und Kategorien. Tatsächliche Verfügbarkeit klären wir persönlich per WhatsApp oder Telefon.</p>
+            <div className="mt-7 flex justify-center"><ContactButtons /></div>
           </div>
         </section>
 
@@ -125,12 +125,16 @@ export default function Home() {
         </section>
 
         <section className="cta-section text-white">
-          <Image src="/images/contact-cta.jpg" alt="" fill sizes="100vw" className="object-cover object-[70%_center]" />
-          <div className="shell relative z-10 py-16 sm:py-20">
+          <div className="cta-media" aria-hidden="true">
+            <Image src="/images/contact-cta.jpg" alt="" fill sizes="100vw" className="cta-photo object-cover" />
+          </div>
+          <div className="shell cta-content-wrap">
+            <div className="cta-copy">
             <p className="eyebrow !text-accent">Direkt anfragen</p>
             <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">Bereit für Ihre nächste Tour?</h2>
             <p className="mt-4 max-w-xl leading-7 text-white/80">Senden Sie uns Ihren Wunschtermin, die Mietdauer und die gewünschte Fahrzeugart. Wir klären die Verfügbarkeit persönlich mit Ihnen.</p>
             <div className="mt-8"><ContactButtons dark /></div>
+            </div>
           </div>
         </section>
       </main>
