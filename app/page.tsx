@@ -67,7 +67,11 @@ export default function Home() {
             </header>
             <div className="hero-copy">
               <p className="eyebrow !text-accent">Schwäbisch Hall &amp; Umgebung</p>
-              <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-6xl">E-Bike mieten &amp; Schwäbisch Hall entdecken.</h1>
+              <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-white [text-wrap:balance] sm:text-6xl">
+                <span>E-Bike mieten &amp;</span><br className="hidden sm:block" />
+                <span> Schwäbisch Hall</span><br className="hidden sm:block" />
+                <span> entdecken.</span>
+              </h1>
               <p className="mt-6 max-w-xl text-lg leading-8 text-white/80">Das passende E-Bike für Ihre nächste Tour. Einfach Ihren Wunschtermin anfragen und Verfügbarkeit klären.</p>
               <div className="mt-8"><ContactButtons dark /></div>
               <div className="mt-5 max-w-lg text-sm leading-6 text-white/60">
@@ -93,7 +97,7 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-forest/70">Die Bilder zeigen Beispielmodelle und Kategorien. Tatsächliche Verfügbarkeit klären wir persönlich per WhatsApp oder Telefon.</p>
+            <p className="mx-auto mt-6 max-w-2xl text-center text-sm leading-6 text-forest/70 [text-wrap:balance]">Die Bilder zeigen Beispielmodelle und Kategorien. Tatsächliche Verfügbarkeit klären wir persönlich per WhatsApp oder Telefon.</p>
             <div className="mt-7 flex justify-center"><ContactButtons /></div>
           </div>
         </section>
@@ -126,7 +130,7 @@ export default function Home() {
 
         <section className="cta-section text-white">
           <div className="cta-media" aria-hidden="true">
-            <Image src="/images/contact-cta.jpg" alt="" fill sizes="100vw" className="cta-photo object-cover" />
+            <Image src="/images/contact-cta-v2.jpg" alt="" fill sizes="100vw" className="cta-photo object-cover" />
           </div>
           <div className="shell cta-content-wrap">
             <div className="cta-copy">
