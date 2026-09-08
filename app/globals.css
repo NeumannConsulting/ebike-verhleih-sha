@@ -32,13 +32,13 @@ body { margin: 0; background: #f4f4f2; color: #202020; font-family: Arial, Helve
 .cta-copy { padding-block: 4rem; }
 @media (min-width: 640px) {
   .hero { display: block; min-height: 44rem; position: relative; }
-  .hero-media { aspect-ratio: 2400 / 857; height: auto; inset-block-start: 50%; inset-inline-start: 50%; max-width: 72rem; order: initial; position: absolute; transform: translate(-50%, -50%); width: min(calc(100% - 2rem), 72rem); z-index: -1; }
+  .hero-media { height: auto; inset-block: 0; inset-inline-start: 50%; max-width: 72rem; order: initial; position: absolute; transform: translateX(-50%); width: min(calc(100% - 2rem), 72rem); z-index: -1; }
   .hero-media::after { background: linear-gradient(90deg, rgba(15, 15, 15, .98) 0%, rgba(15, 15, 15, .93) 30%, rgba(15, 15, 15, .62) 50%, rgba(15, 15, 15, .12) 76%, rgba(15, 15, 15, .12) 100%); }
   .hero-media { mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 95%, transparent 100%); }
   .hero-photo { object-position: 84% center; }
   .hero-copy { padding-block: 7.5rem 8rem; }
   .cta-section { display: block; min-height: 34rem; position: relative; }
-  .cta-media { aspect-ratio: 1800 / 750; height: auto; inset-block-start: 50%; inset-inline-start: 50%; max-width: 72rem; order: initial; position: absolute; transform: translate(-50%, -50%); width: min(calc(100% - 2rem), 72rem); z-index: -1; }
+  .cta-media { height: auto; inset-block: 0; inset-inline-start: 50%; max-width: 72rem; order: initial; position: absolute; transform: translateX(-50%); width: min(calc(100% - 2rem), 72rem); z-index: -1; }
   .cta-media::after { background: linear-gradient(90deg, rgba(20, 20, 20, .98) 0%, rgba(20, 20, 20, .91) 38%, rgba(20, 20, 20, .28) 78%, rgba(20, 20, 20, .18) 100%); }
   .cta-media { mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 96%, transparent 100%); }
   .cta-photo { object-position: 100% 70%; }
